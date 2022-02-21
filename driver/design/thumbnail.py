@@ -36,8 +36,8 @@ async def thumb(thumbnail, title, userid, ctitle):
                     await f.close()
     else:
         img_path = thumbnail
-    image1 = Image.open(img_path)
-    image2 = Image.open("driver/source/lucky.png")
+    image1 = Image.open("driver/source/lucky.png")
+    image2 = Image.open("driver/source/LightBlue.png")
     image3 = changeImageSize(1280, 720, image1)
     image4 = changeImageSize(1280, 720, image2)
     image5 = image3.convert("RGBA")
