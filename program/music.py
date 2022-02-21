@@ -277,7 +277,7 @@ async def play(c: Client, m: Message):
                                 await m.reply_photo(
                                     photo=image,
                                     reply_markup=InlineKeyboardMarkup(buttons),
-                                    caption=f"🗂 **Name:** [{songname}]({url}) | `music`\n**⏱ Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                                    caption=f"🦋 **𝐍𝐚𝐦𝐞:** [{songname}]({url}) | 𝐌𝐮𝐬𝐢𝐜\n**🦋 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧:** `{duration}`\n🦋 **𝐋𝐮𝐜𝐤𝐲 𝐮𝐬𝐞𝐫:** {requester}",
                                 )
                                 await idle()
                                 remove_if_exists(image)
@@ -325,7 +325,7 @@ async def play(c: Client, m: Message):
                         await m.reply_photo(
                             photo=image,
                             reply_markup=InlineKeyboardMarkup(buttons),
-                            caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({url}) | `music`\n**⏱ Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                            caption=f"💡 **𝐓𝐫𝐚𝐜𝐤 𝐚𝐝𝐝𝐞𝐝 𝐭𝐨 𝐪𝐮𝐞𝐮𝐞 »** `{pos}`\n\n🗂 **𝐍𝐚𝐦𝐞:** [{songname}]({url}) | 𝐌𝐮𝐬𝐢𝐜\n**🦋 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧:** `{duration}`\n🦋 **𝐋𝐮𝐜𝐤𝐲 𝐮𝐬𝐞𝐫:** {requester}",
                         )
                         remove_if_exists(image)
                     else:
@@ -348,7 +348,7 @@ async def play(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"🗂 **Name:** [{songname}]({url}) | `music`\n**⏱ Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                                caption=f"🦋 **𝐍𝐚𝐦𝐞:** [{songname}]({url}) | 𝐌𝐮𝐬𝐢𝐜\n**🦋 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧:** `{duration}`\n🦋 **𝐋𝐮𝐜𝐤𝐲 𝐮𝐬𝐞𝐫:** {requester}",
                             )
                             await idle()
                             remove_if_exists(image)
