@@ -3,8 +3,8 @@
 import wget
 import speedtest
 
-from program.utils.formatters import bytes
-from driver.filters import command, other_filters
+from PIL import Image
+from driver.filters import command
 from driver.decorators import sudo_users_only
 from config import BOT_USERNAME as bname
 from driver.core import bot as app
@@ -31,6 +31,12 @@ async def run_speedtest(_, message: Message):
         return
     m = await m.edit("🔄 sharing speedtest results")
     path = wget.download(result["share"])
+    try:
+        img = Image.open(path)
+        c = img.crop((17, 11, 727, 389))
+        c.save(path)
+    except BaseException:
+        pass
 
     output = f"""💡 **SpeedTest Results**
     
