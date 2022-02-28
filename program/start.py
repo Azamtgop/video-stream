@@ -92,7 +92,7 @@ async def start_(c: Client, message: Message):
 
 💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](tg://user?id=1729094176) ʙᴀʙʏ...
 ━━━━━━━━━━━━━━━━━━━━━━
-"""
+""",
         reply_markup=InlineKeyboardMarkup(
             [
         [
@@ -100,7 +100,7 @@ async def start_(c: Client, message: Message):
             InlineKeyboardButton("🔥 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​ 🔥", url=f"https://t.me/maxopeditz")
         ]
     ]
-)
+),
         disable_web_page_preview=True,
     )
 
