@@ -18,7 +18,7 @@ def stream_markup(user_id):
             InlineKeyboardButton("▢", callback_data="end"),
         ],
         [
-            InlineKeyboardButton("• ᴄʟᴏsᴇ​ •", callback_data="close")
+            InlineKeyboardButton("𓆩👑❛ 𝐋𝐮𝐜𝐤𝐲 ♕︎ 𝐖𝐨𝐫𝐥𝐝᭄ ❜👑𓆪", url=f"https://t.me/terayaarhoomai")
         ]
     ]
 )
