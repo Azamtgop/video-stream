@@ -8,11 +8,16 @@ from pyrogram.types import (
 
 def stream_markup(user_id):
   buttons = [
-    [
-      InlineKeyboardButton(text="• Mᴇɴᴜ", callback_data=f'stream_menu_panel | {user_id}'),
-      InlineKeyboardButton(text="• Cʟᴏsᴇ", callback_data=f'set_close'),
-    ],
-  ]
+        [
+            InlineKeyboardButton("II", callback_data="pause"),
+            InlineKeyboardButton("▷", callback_data="resume"),
+            InlineKeyboardButton("‣‣I", callback_data="skip"),
+            InlineKeyboardButton("▢", callback_data="end"),
+        ],
+        [
+            InlineKeyboardButton("• ᴄʟᴏsᴇ •", callback_data="close")
+        ]
+    ]
   return buttons
 
 
