@@ -370,7 +370,7 @@ async def play(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"🦋 ɴᴀᴍᴇ: [{songname}]({link}) | \n\n🕕 ᴅᴜʀᴀᴛɪᴏɴ: {duration}",
+                                caption=f"🦋 Name: [{songname}]({link}) | \n\n🕕 Duration: {duration}",
                             )
                             remove_if_exists(image)
                         except (NoActiveGroupCall, GroupCallNotFound):
