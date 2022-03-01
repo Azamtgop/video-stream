@@ -197,20 +197,21 @@ async def play(c: Client, m: Message):
         ubot = me_user.id
         b = await c.get_chat_member(chat_id, ubot)
         if b.status == "banned":
-            await m.reply_text("❌ The userbot is banned in this chat, unban the userbot first to be able to play music !")
-            return
-        invitelink = (await c.get_chat(chat_id)).invite_link
-        if not invitelink:
-            await c.export_chat_invite_link(chat_id)
+            try:
+                await m.reply_text("❌ The userbot is banned in this chat, unban the userbot first to be able to play music !")
+                await remove_active_chat(chat_id)
+            except BaseException:
+                pass
             invitelink = (await c.get_chat(chat_id)).invite_link
-        if invitelink.startswith("https://t.me/+"):
-            invitelink = invitelink.replace(
-                "https://t.me/+", "https://t.me/joinchat/"
-            )
+            if not invitelink:
+                await c.export_chat_invite_link(chat_id)
+                invitelink = (await c.get_chat(chat_id)).invite_link
+            if invitelink.startswith("https://t.me/+"):
+                invitelink = invitelink.replace(
+                    "https://t.me/+", "https://t.me/joinchat/"
+                )
             await user.join_chat(invitelink)
             await remove_active_chat(chat_id)
-    except UserAlreadyParticipant:
-        pass
     except UserNotParticipant:
         try:
             invitelink = (await c.get_chat(chat_id)).invite_link
@@ -269,7 +270,7 @@ async def play(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"🦋 Name: [{songname}]({link}) | \n\n🕕 Duration: {duration}",
+                                caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({url}) | `music`\n**⏱ Duration:** `{duration}`\n🧸 **Request by:** {requester}",
                             )
                             remove_if_exists(image)
                         else:
@@ -294,7 +295,7 @@ async def play(c: Client, m: Message):
                                 await m.reply_photo(
                                     photo=image,
                                     reply_markup=InlineKeyboardMarkup(buttons),
-                                    caption=f"🦋 Name: [{songname}]({link}) | \n\n🕕 Duration: {duration}",
+                                    caption=f"🗂 **Name:** [{songname}]({url}) | `music`\n**⏱ Duration:** `{duration}`\n🧸 **Request by:** {requester}",
                                 )
                                 remove_if_exists(image)
                             except (NoActiveGroupCall, GroupCallNotFound):
@@ -347,7 +348,7 @@ async def play(c: Client, m: Message):
                         await m.reply_photo(
                             photo=image,
                             reply_markup=InlineKeyboardMarkup(buttons),
-                            caption=f"🦋 Name: [{songname}]({link}) | \n\n🕕 Duration: {duration}",
+                            caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({url}) | `music`\n**⏱ Duration:** `{duration}`\n🧸 **Request by:** {requester}",
                         )
                         remove_if_exists(image)
                     else:
@@ -370,7 +371,7 @@ async def play(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"🦋 Name: [{songname}]({link}) | \n\n🕕 Duration: {duration}",
+                                caption=f"🗂 **Name:** [{songname}]({url}) | `music`\n**⏱ Duration:** `{duration}`\n🧸 **Request by:** {requester}",
                             )
                             remove_if_exists(image)
                         except (NoActiveGroupCall, GroupCallNotFound):
