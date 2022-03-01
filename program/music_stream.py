@@ -270,7 +270,7 @@ async def play(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"💡 **ᴛʀᴀᴄᴋ ᴀᴅᴅᴇᴅ ᴛᴏ Qᴜᴇᴜᴇ »** `{pos}`\n\n🦋 **Nᴀᴍᴇ:** [{songname}]({url}) | `music`\n**⏱ Dᴜʀᴀᴛɪᴏɴ:** `{duration}`",
+                                caption=f"💡 **ᴛʀᴀᴄᴋ ᴀᴅᴅᴇᴅ ᴛᴏ Qᴜᴇᴜᴇ »** `{pos}`\n\n🦋 **Nᴀᴍᴇ:** {title[:20]} | `music`\n**⏱ Dᴜʀᴀᴛɪᴏɴ:** `{duration}`",
                             )
                             remove_if_exists(image)
                         else:
@@ -295,7 +295,7 @@ async def play(c: Client, m: Message):
                                 await m.reply_photo(
                                     photo=image,
                                     reply_markup=InlineKeyboardMarkup(buttons),
-                                    caption=f"🦋 **Nᴀᴍᴇ:** [{songname}]({url}) | `music`\n\n**⏱ Dᴜʀᴀᴛɪᴏɴ:** `{duration}`",
+                                    caption=f"🦋 **Nᴀᴍᴇ:** {title[:20]} | `music`\n\n**⏱ Dᴜʀᴀᴛɪᴏɴ:** `{duration}`",
                                 )
                                 remove_if_exists(image)
                             except (NoActiveGroupCall, GroupCallNotFound):
@@ -348,7 +348,7 @@ async def play(c: Client, m: Message):
                         await m.reply_photo(
                             photo=image,
                             reply_markup=InlineKeyboardMarkup(buttons),
-                            caption=f"💡 **Tʀᴀᴄᴋ ᴀᴅᴅᴇᴅ ᴛᴏ Qᴜᴇᴜᴇ »** `{pos}`\n\n🦋 **ɴᴀᴍᴇ:** [{songname}]({url}) | `music`\n\n**⏱ ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`",
+                            caption=f"💡 **Tʀᴀᴄᴋ ᴀᴅᴅᴇᴅ ᴛᴏ Qᴜᴇᴜᴇ »** `{pos}`\n\n🦋 **ɴᴀᴍᴇ:** {title[:20]} | `music`\n\n**⏱ ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`",
                         )
                         remove_if_exists(image)
                     else:
@@ -371,7 +371,7 @@ async def play(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"🦋 **ɴᴀᴍᴇ:** [{songname}]({url}) | `music`\n**⏱ ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`",
+                                caption=f"🦋 **ɴᴀᴍᴇ:** {title[:20]} | `music`\n**⏱ ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`",
                             )
                             remove_if_exists(image)
                         except (NoActiveGroupCall, GroupCallNotFound):
