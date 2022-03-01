@@ -12,10 +12,10 @@ def stream_markup(user_id):
   buttons = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("II", callback_data=f'cbpause),
-            InlineKeyboardButton("▷", callback_data=f'cbresume),
-            InlineKeyboardButton("‣‣I", callback_data=f'cbskip),
-            InlineKeyboardButton("▢", callback_data=f'cbstop),
+            InlineKeyboardButton("II", callback_data="pause"),
+            InlineKeyboardButton("▷", callback_data="resume"),
+            InlineKeyboardButton("‣‣I", callback_data="skip"),
+            InlineKeyboardButton("▢", callback_data="stop"),
         ],
         [
             InlineKeyboardButton("𓆩👑❛ 𝐋𝐮𝐜𝐤𝐲 ♕︎ 𝐖𝐨𝐫𝐥𝐝᭄ ❜👑𓆪", url=f"https://t.me/terayaarhoomai")
