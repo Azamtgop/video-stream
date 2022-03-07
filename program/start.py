@@ -98,20 +98,20 @@ async def start_(c: Client, message: Message):
                 [
                     InlineKeyboardButton(
                         "➕ Add me to your Group ➕",
-                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                        url=f"https://t.me/azam_sharif_gorup?startgroup=true",
                     )
                 ],
                 [InlineKeyboardButton("❓ Basic Guide", callback_data="user_guide")],
                 [
                     InlineKeyboardButton("📚 Commands", callback_data="command_list"),
-                    InlineKeyboardButton("❤️ Donate", url=f"https://t.me/{OWNER_USERNAME}"),
+                    InlineKeyboardButton("❤️ Donate", url=f"https://t.me/azam_sharif_OWNER}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "👥 Official Group", url=f"https://t.me/azam_sharif_gorup"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 Official Channel", url=f"https://t.me/cinema_a2z"
                     ),
                 ],
                 [
@@ -138,9 +138,9 @@ async def alive(c: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("✨ Group", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("✨ Group", url=f"https://t.me/azam_sharif_gorup"),
                 InlineKeyboardButton(
-                    "📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "📣 Channel", url=f"https://t.me/cinema_a2z"
                 ),
             ]
         ]
@@ -212,10 +212,10 @@ async def new_chat(c: Client, m: Message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                                InlineKeyboardButton("💭 Support", url=f"https://t.me/{GROUP_SUPPORT}")
+                                InlineKeyboardButton("📣 Channel", url=f"https://t.me/cinema_a2z"),
+                                InlineKeyboardButton("💭 Support", url=f"https://t.me/azam_sharif_gorup")
                             ],[
-                                InlineKeyboardButton("👤 Assistant", url=f"https://t.me/{me_user.username}")
+                                InlineKeyboardButton("👤 Assistant", url=f"https://t.me/azam_sharif_gorup")
                             ]
                         ]
                     )
