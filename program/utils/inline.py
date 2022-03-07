@@ -15,7 +15,7 @@ def stream_markup(user_id):
             InlineKeyboardButton("▢", callback_data=f'set_stop | {user_id}'),
         ],
         [
-            InlineKeyboardButton("𓆩👑❛ 𝐋𝐮𝐜𝐤𝐲 ♕︎ 𝐖𝐨𝐫𝐥𝐝᭄ ❜👑𓆪", url=f"https://t.me/terayaarhoomai")
+            InlineKeyboardButton("𓆩👑❛ Azam ♕︎ 𝐖𝐨𝐫𝐥𝐝᭄ ❜👑𓆪", url=f"https://t.me/azam_sharif_gorup")
         ]
     ]
   return buttons
