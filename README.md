@@ -4,7 +4,7 @@
 
 
 
-<p align="center"><a href="https://t.me/terayaarhoomai"><img src="https://telegra.ph/file/0824baeceeb1f6d3223de.jpg"></a></p>
+<p align="center"><a href="https://t.me/azam_sharif_gorup"><img src="https://te.legra.ph/file/5f9359d8bc341db3ed027.jpg"></a></p>
 <p align="center">
     <br><b>Video Stream is an Advanced Telegram Bot that's allow you to play Video & Music on Telegram Group Video Chat</b><br>
 </p>
@@ -28,7 +28,7 @@
 
 ## 🎭 Preview
 <p align="center">
-  <img src="https://telegra.ph/file/b8c1461bcbbad5664aa48.png">
+  <img src="https://te.legra.ph/file/5f9359d8bc341db3ed027.jpg">
 </p>
 
 ## ✨ Features
