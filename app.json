@@ -11,9 +11,9 @@
         "mongodb",
         "pyrogram"
     ],
-    "website": "https://t.me/terayaarhoomai",
+    "website": "https://t.me/azam_sharif_gorup",
     "repository": "https://github.com/mrvk1703/video-stream",
-    "success_url": "https://t.me/cute_boy701",
+    "success_url": "https://t.me/azam_sharif_OWNER",
     "env": {
         "API_ID": {
             "description": "your API_ID from my.telegram.org",
