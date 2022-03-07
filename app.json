@@ -1,7 +1,7 @@
 {
     "name": "Music Stream Bot",
     "description": "Telegram bot for Streaming Video & Music trought the Telegram Group Video Chat, powered by PyTgCalls and Pyrogram",
-    "logo": "https://telegra.ph/file/8c5e564422e8c5e0085ca.jpg",
+    "logo": "https://te.legra.ph/file/5f9359d8bc341db3ed027.jpg",
     "keywords": [
         "py-tgcalls",
         "telegram bot",
